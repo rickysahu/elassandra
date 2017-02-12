@@ -272,7 +272,6 @@ public class MapperService extends AbstractIndexComponent implements Closeable {
             if (type instanceof ListType) {
                 mapping.put(TypeParsers.CQL_COLLECTION, "list");
                 buildNativeOrUdtMapping(mapping, ((ListType<?>)type).getElementsType() );
-                mapping.put(TypeParsers.CQL_COLLECTION, "list");
             } else if (type instanceof SetType) {
                 mapping.put(TypeParsers.CQL_COLLECTION, "set");
                 buildNativeOrUdtMapping(mapping, ((SetType<?>)type).getElementsType() );
