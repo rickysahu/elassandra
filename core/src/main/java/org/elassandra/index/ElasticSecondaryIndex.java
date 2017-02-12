@@ -1432,7 +1432,7 @@ public class ElasticSecondaryIndex implements Index, ClusterStateListener {
                                 } else {
                                     set = row.getSet(columnName, elementType);
                                 }
-                                values[idx] =  (set.size() == 1) ? set.iterator().next() : set;
+                                values[idx] = set;
                                 break;
                             case MAP:
                                 Map map;
