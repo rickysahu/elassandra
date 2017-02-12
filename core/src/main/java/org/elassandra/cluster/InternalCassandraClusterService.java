@@ -1730,7 +1730,7 @@ public class InternalCassandraClusterService extends InternalClusterService {
                             set.add( value(fieldMapper, v, valueForSearch) );
                         }
                     }
-                    values[i] =  (set.size() == 1) ? set.iterator().next() : set;
+                    values[i] = set;
                     break;
                 case MAP :
                     Map map;
